@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.css">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/app.css">
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript" src="/jquery/jquery.js"></script>
+    <script type="text/javascript" src="/popper/popper.min.js"></script>
+    <script type="text/javascript" src="/bootstrap/js/bootstrap.js"></script>
+
+    <!-- Mustache -->
+    <script type="text/javascript" src="/mustache/mustache.min.js"></script>
+    
+    <!-- App.js -->
+    <script type="text/javascript" src="/assets/js/app.js"></script>
+
+    <title>INFOGLOBO</title>
+  </head>
+  <body>
+    <div class="container px-0">
+        <div id="header">
+            <a href="#"></a>
+        </div>
+    
+        <div id="main-content" class="mt-4">
+            <script type="mustache/x-tmpl" id="main-wrapper">
+                <div class="row large-news">
+                    {{#large}}
+                    <div class="col">
+                        <img alt="{{title}}" title="{{title}}" src="assets/media/{{image}}" />
+                        <div class="shadow"></div>
+                        <a href="{{url}}" alt="Compartilhar" title="Compartilhar"></a>                                          
+                        <div class="pl-3 pr-5">
+                            <h2 class="label">{{label}}</h2>
+                            <h3 class="title">{{title}}</h3>
+                            <p class="description">{{description}}</p>
+                        </div>
+                    </div>
+                    {{/large}}
+                </div>
+
+                <hr />
+
+                <div class="row mt-4 medium-news">
+                    {{#medium}}
+                    <div class="col-sm-3 col-6 box-image">
+                        <img alt="{{title}}" title="{{title}}" src="assets/media/{{image}}" />                                                
+                        <a class="mobile" href="{{url}}" alt="Compartilhar" title="Compartilhar">   </a>                                                                      
+                    </div>
+                    <div class="col-sm-3 col-6 p-0">
+                        <h2 class="label">{{label}}</h2>
+                        <h3 class="title">{{title}}</h3>
+                        <p class="description">{{description}}</p>
+                        <a href="{{url}}" alt="Compartilhar" title="Compartilhar"></a>                                                                      
+                    </div>                    
+                    {{/medium}}
+                </div>        
+                <div class="row mt-4 small-news">
+                    {{#small}}
+                    <div class="col-sm-3 col-12">
+                        <img alt="{{title}}" title="{{title}}" src="assets/media/{{image}}" />   
+                        <div>                                             
+                            <h2 class="label mt-2">{{label}}</h2>
+                            <h3 class="title">{{title}}</h3>
+                            <p class="description">{{description}}</p>
+                            <a href="{{url}}" alt="Compartilhar" title="Compartilhar"></a>  
+                        </div>                                                                                            
+                    </div>
+                    {{/small}}
+                </div>
+            </script>
+        </div>
+
+        <div class="advertising mt-4"></div>
+
+        <div id="brasil-content" class="mt-4">
+            <script type="mustache/x-tmpl" id="brasil-wrapper">
+                <h1 class="section-title">{{name}}</h1>
+                <div class="row small-news">
+                    {{#data}}
+                    <div class="col-sm-3">
+                        <img alt="{{title}}" title="{{title}}" src="assets/media/{{image}}" />
+                        <h2 class="label mt-2">{{label}}</h2>
+                        <h3 class="title">{{title}}</h3>
+                        <p class="description">{{description}}</p>
+                        <a href="{{url}}" alt="Compartilhar" title="Compartilhar"></a>                                                                                                                      
+                    </div>
+                    {{/data}}
+                </div>       
+            </script>
+        </div>
+
+        <div id="brasil-more" class="bt-more mt-4">
+            <a href="javascript:;">+ BRASIL</a>
+        </div>
+
+        <div id="mundo-content" class="mt-4">
+            <script type="mustache/x-tmpl" id="mundo-wrapper">
+                <h1 class="section-title">{{name}}</h1>
+                <div class="row small-news">
+                    {{#data}}
+                    <div class="col-sm-3">
+                        <img alt="{{title}}" title="{{title}}" src="assets/media/{{image}}" />                        
+                        <h2 class="label mt-2">{{label}}</h2>
+                        <h3 class="title">{{title}}</h3>
+                        <p class="description">{{description}}</p>
+                        <a href="{{url}}" alt="Compartilhar" title="Compartilhar"></a>                                                                                                                      
+                    </div>
+                    {{/data}}
+                </div>           
+            </script>
+        </div>
+
+        <div id="world-more" class="bt-more mt-4">
+            <a href="javascript:;">+ MUNDO</a>
+        </div>
+
+        <div id="footer" class="mt-4">
+            <img src="assets/media/logo-footer.png" />  
+            <span>
+                COPYRIGHT © 2018<br />
+                TODOS OS DIREITOS RESERVADOS
+            </span>          
+        </div>
+        <p class="copyright">
+            COPYRIGHT © 2018<br />
+            TODOS OS DIREITOS RESERVADOS
+        </p>  
+    </div>
+  </body>
+</html>

@@ -1,0 +1,156 @@
+*{font-family: Arial, Helvetica, sans-serif;}
+
+#header{background: #004861 url('../media/logo-header.png') no-repeat center center;}
+#header a{
+    background: #004861 url('../media/icon-menu.png') no-repeat;
+    display: inline-block;
+    height: 20px;
+    width: 24px;
+}
+
+.large-news .label{font-weight: bold; text-transform: uppercase;}
+
+#footer{background: #d5e11f; height: 80px; padding: 30px 32px 30px 52px;}
+#footer span{float: right; font-size: 10px; text-align: right; }
+
+.large-news{position: relative;}
+.large-news div.shadow{box-shadow: inset 0 0 60px 130px #0006;  position: absolute; top:0;}
+
+.large-news .label{font-size: 12px;}
+.large-news .title{font-weight: bold; font-size: 21px;}
+
+.large-news .description,
+.medium-news .description,
+.small-news .description{font-size: 14px;}
+
+.medium-news .label,
+.small-news .label,
+.bt-more a{
+    color: #004861; 
+    font-weight: bold; 
+    font-size: 10px; 
+    text-transform: uppercase;
+}
+
+.medium-news .title,
+.small-news .title{font-weight: bold; font-size: 18px;}
+
+.medium-news a,
+.small-news a{
+    background: url('../media/icon-share-black.png') no-repeat;
+    display: inline-block; 
+    height: 24px; 
+    width: 24px;
+}
+
+.section-title{
+    color: #004861; 
+    font-weight: bold; 
+    font-size: 24px; 
+    text-transform: uppercase;
+}
+
+.bt-more{
+    border-bottom: 1px solid #e0e0e0;
+    border-top: 1px solid #e0e0e0;
+    text-align: right;
+    padding: 8px 32px;
+}
+.bt-more a{font-size: 18px;}
+
+@media (min-width: 1024px) {
+    .container {
+        width: 1024px;
+    }
+
+    #header{background-size: 384px 50px; height: 100px; line-height: 100px;}
+    #header a{margin-left: 32px;}
+
+    .large-news,
+    .medium-news,
+    .small-news{margin: 0 16px;}
+
+    .large-news div[class^=col],
+    .small-news div[class^=col]{padding: 0 16px;}
+
+    .large-news div[class^=col] div{bottom: 0; color: #FFF; position: absolute;}
+    
+    .large-news div.shadow{height: 261px; width: 464px}
+
+    .large-news a{
+        position: absolute;
+        right: 47px;
+        top: 10px;
+    }
+    
+    .medium-news .box-image{padding: 0; padding-left: 16px;}    
+    
+    .medium-news a,
+    .small-news a{
+        background: url('../media/icon-share-black.png') no-repeat;
+        bottom: 0;
+        display: inline-block; 
+        height: 24px; 
+        left: 0;
+        position: absolute;
+        width: 24px;
+    }
+    .medium-news a.mobile{display: none;}    
+
+    .medium-news a{bottom: 0; left: 0; position: absolute;}
+    .small-news a{margin-left: 16px;}
+    
+    .small-news .description{padding-bottom: 10px;}
+
+    .advertising{ background: url('../media/advertising.png') no-repeat; height: 150px;}
+
+    .section-title{margin-left: 32px;}
+
+    hr{display: none}
+
+    .copyright{ display: none;}
+}
+
+@media only screen and (max-width: 375px) {
+    #header{background-size: 165px 19px; height: 50px; line-height: 50px;}
+    #header a{background-position: 0 6px; margin-left: 15px; padding-top: 6px;}    
+    
+    .large-news img,
+    .medium-news img{width: 100%; height: auto;}
+
+    .medium-news,
+    .small-news{margin-left: 0}
+
+    #main-content{margin: 0 !important;}
+
+    .large-news div.shadow{height: 180px; width: 320px}
+    .large-news .label{color: #004861; font-size: 10px; margin-top: 15px;}
+
+    .medium-news a{display: none;}
+    .medium-news a.mobile{display: block; float: right; margin-top: 5px;}
+    .medium-news div.p-0{padding-right: 15px !important;}
+
+    .small-news img{
+        float: left; 
+        height: auto; 
+        margin-right: 10px;
+        width: 50%;
+    }
+
+    .medium-news div[class^=col],
+    .small-news div[class^=col]{border-bottom: 1px solid #e0e0e0; margin-bottom: 10px;}
+
+    .advertising{ background: url('../media/advertising-mb.png') no-repeat; height: 100px;}
+    
+    .section-title{margin-left: 15px;}    
+
+    #footer span{display: none;}
+
+    .copyright{
+        background: #004861; 
+        color: #FFF; 
+        font-size: 10px; 
+        padding: 30px 0;
+        text-align: center;
+    }   
+}
